@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Kameron:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Kameron,serif;
+    color:#2e377f;
+}
+.linkForum{
+    display: block;
+    margin-right: 5vw;
+    margin-bottom: 8vh;
+}
+.links{
+    display: none;
+}
+header{
+    display:flex;
+    background-color: #F3F3F3;
+}
+nav{
+    position:absolute;
+    width:25vw;
+    height: 120vh;
+    background-color: #F3F3F3;
+    
+}
+nav #olaX{
+    background-color: #d9d9d9;
+    height: 10vh;
+    
+}
+nav #olaX h1{
+    font-size: 25px;
+    text-align: center;
+}
+nav #olaX img{
+    width: 1.5vw;
+    margin-left: 26vw;
+    margin-top: 1vh;
+    cursor: pointer;
+}
+nav li img{
+    width: 3vw;
+    height: 6vh;
+    margin-top: 4vh;
+}
+nav li{
+    list-style: none;
+    padding:4px;
+    
+}
+nav a{
+    font-size:1.4vw;
+    text-decoration:none;
+    text-align: center;
+    margin-left: 5vw;
+}
+
+.cabecalho{
+    display: grid;
+    grid-template-columns: 15vw 15vw 15vw 15vw 15vw 15vw; 
+    justify-content: center;
+    align-content: start;
+    grid-gap: 1vw;
+    background-color: #d9d9d9;
+}
+
+#menu img{
+    margin-top: 25px;
+    width: 5vw;
+    cursor: pointer;
+}
+
+#logo img{
+    width: 8vw;
+    margin-left: 68vw;
+}
+.imgConteudo{
+    width: 90%;
+}
+
+.corpo{
+    text-align: center;
+    font-size: 18px;
+    padding-right: 25vw;
+    padding-left: 25vw;
+    background-color: #F3F3F3;
+}
+
+.divConteudos{
+    background-color: #d9d9d9;
+    padding: 6%;
+}
+
+.corpo h1{
+    font-size: 30px;
+    margin-bottom: 2vw;
+}
+.corpo h2{
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
+
+footer{
+    padding:15px;
+    background-color: #F3F3F3 ;
+}

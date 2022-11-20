@@ -1,0 +1,69 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/profissionais.css">
+    <title>Profissionais</title>
+</head>
+<body>
+     
+    <h1>Profissionais</h1>
+    <div class="linha">
+        <div class="imgs">
+            <img src="/imagens/roger.jpg"/>
+            <h2>Roger Ferreira dos Santos</h2>
+            <p >Psicólogo</p>
+            <h3>CONTATO</h3>
+            <div id="whatsUm">
+                <h4>(51)98614-8355</h4>
+                <a href=" https://wa.me/5551986148355" target="_blank">
+                <img src="/imagens/whatsapp.png" id="imgUm" alt="Contate o Psicólogo Roger pelo WhatsApp" title="Contate o Psicólogo Roger pelo WhatsApp"/>
+                </a>
+            </div>
+        </div>
+
+        <div class="imgs">
+            <img  src="/imagens/ana.jpg"/>
+            <h2 >Ana Caroline Kohlrausch</h2>
+            <p >Psicóloga</p>
+            <h3 >CONTATO</h3>
+            <div id="whatsDois">
+                <h4>(51)99910-2127</h4>
+                <a href=" https://wa.me/5551999102127" target="_blank">
+                <img src="/imagens/whatsapp.png" id="imgDois" alt="Contate a Psicóloga Ana pelo WhatsApp" title="Contate a Psicóloga Ana pelo WhatsApp"/>
+                </a>
+            </div>
+        </div>
+        <div class="imgs">
+            <img  src="/imagens/diego.jpeg"/>
+            <h2 >Diego da Silva Souza</h2>
+            <p >Psicólogo</p>
+            <h3 >CONTATO</h3>
+            <div id="whatsTres">
+                <h4>(51)98432-6142</h4>
+                <a href=" https://wa.me/5551984326142" target="_blank">
+                <img src="/imagens/whatsapp.png" id="imgTres" alt="Contate o Psicólogo Diego pelo WhatsApp" title="Contate o Psicólogo Diego pelo WhatsApp"/>
+                </a>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.querySelector("nav").style.display="none";
+        icon=document.querySelector("#menu");
+        icon.onclick= function(){
+            nav=document.querySelector("nav");
+            if(nav.style.display=="none")
+                nav.style.display="block";
+
+            else 
+                nav.style.display="none";
+                
+            }
+
+        x = document.querySelector("#x");
+        x.onclick=function(){
+            nav=document.querySelector("nav");
+            nav.style.display="none";
+        }
+    </script>
+</body>

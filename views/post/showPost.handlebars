@@ -1,0 +1,93 @@
+ <!-- BOOTSTRAP ICONS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/css/forum.css">
+<div class="home-header">
+    
+    
+   
+    {{#if search}}
+        <h1>Você está buscando por: <span>{{search}}</span></h1>
+        {{#if postsQtd}}
+            <p>Foram encontrados <span>{{postsQtd}}</span> publicações</p>
+        {{else}}
+            <p>Nenhuma publicação foi encontrada para o termo <span>{{search}}</span></p>
+        {{/if}}
+    {{else}}
+        <h1>Fórum</h1>
+    {{/if}}
+    <form action="/showPost" method="GET">
+        <input type="text" name="search" placeholder="Está buscando por algo?">
+        <input type="submit" class="btn" value="Buscar">
+    </form>
+    <div class="order-container">
+        <span>Ordenar por:</span>
+        <form action="/showPost" method="GET">
+            <input type="hidden" name="search" value="{{this.search}}">
+            <input type="hidden" name="order" value="new">
+            <button type="submit"><i class="bi bi-arrow-up"></i></button>
+        </form>
+        <form action="/showPost" method="GET">
+            <input type="hidden" name="search" value="{{this.search}}">
+            <input type="hidden" name="order" value="old">
+            <button type="submit"><i class="bi bi-arrow-down"></i></button>
+        </form>
+        <a href="/showPost">Limpar</a>
+    </div>
+</div>
+
+<div class="posts-container">
+    {{#if admin}}
+        <div class="tittle-container">
+             <ul>
+                {{#each posts}}
+                    <li>
+                        <span class="label">{{this.conteudo}} </span>
+                        <span class="actions">
+                            <form action="/post/adminRemovePost" method="POST">
+                                <input type="hidden" name="id" value="{{this.id}}">
+                                <input type="submit" id="btnExcluir" class="btn" value="Excluir">
+                            </form>
+                        </span>
+                    </li>
+                {{/each}}
+            </ul>
+    {{else}}
+        {{#each posts}}
+                <figure>
+                    <blockquote>
+                        "{{this.conteudo}}"
+                    </blockquote>
+                    <figcaption>por <span>{{this.user.name}}</span></figcaption>
+                    
+                    <input type="hidden" name="id" value="{{this.id}}">
+                    
+                    <a href="/post/addComentario/{{this.id}}" id="comentar">Comentar</a>
+                
+                </figure>
+                
+               {{#each comentarios}}
+                <figure>
+                    <blockquote>
+                        "{{this.comentario.conteudo}}"
+                    </blockquote>
+                </figure>
+
+
+                {{/each}}
+                <!--<a href="/comentario/addComentario" id="publicar">Comentar</a>-->
+            
+            {{/each}}
+            
+    {{/if}}
+
+    {{#each comentarios}}
+        <figure>
+            <blockquote>
+                "{{this.conteudo}}"
+            </blockquote>
+        </figure>
+
+
+    {{/each}}
+   
+</div>

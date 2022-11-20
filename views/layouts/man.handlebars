@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PSICOAPOIO</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <ul>
+        {{#if session.userid}}
+            <li><a href="/post/dashboard">Publicar</a></li>
+            <li><a href="/logout">Sair</a></li>
+        {{else}}
+            <li><a href="/login">Login</a></li>
+            <li><a href="/cadastro">Cadastro</a></li>
+            <!--<li><a href="/post">Fórum</a></li>-->
+        {{/if}}
+    </ul>
+
+    <div class="cont">
+        <!--Mensagens
+        {{#if messages.message}}
+        <div class="message">
+             {{messages.message}}
+        </div>
+        {{/if}}-->
+        {{{body}}}
+    </div>
+</body>
+</html>

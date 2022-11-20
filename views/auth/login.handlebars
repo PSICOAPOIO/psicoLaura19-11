@@ -1,0 +1,41 @@
+
+    <link rel="stylesheet" href="./css/login.css">
+    <div class="container">
+
+            <div id="firstContent" class ="content firstContent">
+                <div  id="login">
+            
+
+                <div  class="bemVindo">
+                    <h1>BEM-VINDO(A) ao PsicoApoio!</h1>
+                    <p>Aqui você encontrará dicas e informações</p>
+                    <p>para o combate a problemas e transtornos </p> 
+                    <p>psicológicos.</p>
+                </div><!--Texto-->
+                
+                <div class="defineLoginOuCadastro">
+                    <div id="opcLogin">
+                        <a href="#" class="ativo" id="loginFormLink">LOGIN</a>
+                    </div>
+
+                    <div class="opcCadastro">
+                        <a href="/cadastro" class="inativo" id="cadastroFormLink">CADASTRO</a>
+                    </div>
+                </div>
+        
+                <form action="/login" method="POST" class="form" id="loginForm">
+                    <input class="inputLogin" type="email" name="email" placeholder="E-mail" required="required"/>
+                    <input class="inputLogin" type="password" name="senha" placeholder="Senha" required="required"/>
+                    <div class="divBtn">
+                        <input class="btn" id="btn" type="submit" name="entrar" value="ENTRAR"/>
+                    </div>
+                    
+                    
+                </form>
+            </div><!--login-->
+        </div>
+        <div>
+            <img src="./imagens/logo.png" id="logo"/>
+        </div><!--logo-->
+    </div>
+

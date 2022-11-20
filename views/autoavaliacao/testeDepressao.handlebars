@@ -1,0 +1,173 @@
+<h1>Teste de Depressão</h1>
+
+
+<link rel="stylesheet" href="../css/testeDepressao.css"/>
+
+<form name="quiz" id="quiz">
+    <div>
+        <p>Você sente que sua concentração e atenção estão reduzidas?</p>
+        <p><input type="radio" name="questao1" value="sim">Sim</p>
+        <p><input type="radio" name="questao1" value="nSei">Não Sei</p>
+        <p><input type="radio" name="questao1" value="nao">Nao</p>
+    </div>
+
+    <div>
+        <p>Você sente que tem baixa autoestima e autoconfiança reduzida?</p>
+        <p><input type="radio" name="questao2" value="sim">Sim</p>
+        <p><input type="radio" name="questao2" value="nSei">Não Sei</p>
+        <p><input type="radio" name="questao2" value="nao">Nao</p>
+    </div>
+
+    <div>
+        <p>Você se irrita por sofrer de alguma fobia ou de preocupações hipocondríacas (relativo a doenças, etc.)?</p>
+        <p><input type="radio" name="questao3" value="sim">Sim</p>
+        <p><input type="radio" name="questao3" value="nSei">Não Sei</p>
+        <p><input type="radio" name="questao3" value="nao">Nao</p>
+    </div>
+
+    <div>
+        <p>Passa por sua cabeça ideias de culpa e inutilidade?</p>
+        <p><input type="radio" name="questao4" value="sim">Sim</p>
+        <p><input type="radio" name="questao4" value="nSei">Não Sei</p>
+        <p><input type="radio" name="questao4" value="nao">Nao</p>
+    </div>
+
+    <div>
+        <p>Frequentemente você enfrenta pensamentos desolados e pessimistas sobre o futuro?</p>
+        <p><input type="radio" name="questao5" value="sim">Sim</p>
+        <p><input type="radio" name="questao5" value="nSei">Não Sei</p>
+        <p><input type="radio" name="questao5" value="nao">Nao</p>
+    </div>
+
+    <div>
+        <p>Você ja pensou sobre atos de mutilação ou suicídio?</p>
+        <p><input type="radio" name="questao6" value="sim">Sim</p>
+        <p><input type="radio" name="questao6" value="nSei">Não Sei</p>
+        <p><input type="radio" name="questao6" value="nao">Nao</p>
+    </div>
+
+    <div>
+        <p>Você sofre com sono perturbado?</p>
+        <p><input type="radio" name="questao7" value="sim">Sim</p>
+        <p><input type="radio" name="questao7" value="nSei">Não Sei</p>
+        <p><input type="radio" name="questao7" value="nao">Nao</p>
+    </div>
+
+    <div>
+        <p>Seu apetite tem diminuído?</p>
+        <p><input type="radio" name="questao8" value="sim">Sim</p>
+        <p><input type="radio" name="questao8" value="nSei">Não Sei</p>
+        <p><input type="radio" name="questao8" value="nao">Nao</p>
+    </div>
+
+    <div>
+        <p>Seu humor sofre alterações/oscilações no decorrer do dia?</p>
+        <p><input type="radio" name="questao9" value="sim">Sim</p>
+        <p><input type="radio" name="questao9" value="nSei">Não Sei</p>
+        <p><input type="radio" name="questao9" value="nao">Nao</p>
+    </div>
+
+    <div>
+        <p>Você se sente irritado com frequência?</p>
+        <p><input type="radio" name="questao10" value="sim">Sim</p>
+        <p><input type="radio" name="questao10" value="nSei">Não Sei</p>
+        <p><input type="radio" name="questao10" value="nao">Nao</p>
+    </div>
+
+    <input id="result" type="button" value="Enviar" onclick="resultado()">
+</form>
+
+<p id="resultado"></p>
+
+<script>
+    function resultado(){
+        var i = 0
+        var q1 = document.quiz.questao1.value
+        var q2 = document.quiz.questao2.value
+        var q3 = document.quiz.questao3.value
+        var q4 = document.quiz.questao4.value
+        var q5 = document.quiz.questao5.value
+        var q6 = document.quiz.questao6.value
+        var q7 = document.quiz.questao7.value
+        var q8 = document.quiz.questao8.value
+        var q9 = document.quiz.questao9.value
+        var q10 = document.quiz.questao10.value
+
+        var resultado = document.getElementById('resultado')
+        var quiz = document.getElementById('quiz')
+
+
+        if(q1 == "sim" ){
+            i=i+1
+        }else if(q1 == "nSei"){
+            i=i+0.5
+        }
+
+        if(q2 == "sim" ){
+            i=i+1
+        }else if(q2 == "nSei"){
+            i=i+0.5
+        }
+
+        if(q3 == "sim" ){
+            i=i+1
+        }else if(q3 == "nSei"){
+            i=i+0.5
+        }
+
+        if(q4 == "sim" ){
+            i=i+1
+        }else if(q4 == "nSei"){
+            i=i+0.5
+        }
+
+        if(q5 == "sim" ){
+            i=i+1
+        }else if(q5 == "nSei"){
+            i=i+0.5
+        }
+
+        if(q6 == "sim" ){
+            i=i+1
+        }else if(q6 == "nSei"){
+            i=i+0.5
+        }
+
+        if(q7 == "sim" ){
+            i=i+1
+        }else if(q7 == "nSei"){
+            i=i+0.5
+        }
+
+        if(q8 == "sim" ){
+            i=i+1
+        }else if(q8 == "nSei"){
+            i=i+0.5
+        }
+
+        if(q9 == "sim" ){
+            i=i+1
+        }else if(q9 == "nSei"){
+            i=i+0.5
+        }
+
+        if(q10 == "sim" ){
+            i=i+1
+        }else if(q10 == "nSei"){
+            i=i+0.5
+        }
+        
+        quiz.style.display="none"
+        
+         /*if(resultado <= i){
+        resultado.textContent ="O seu resultado obtido é de "+i+"/10 pontos, recomenda-se consultar os conteúdos do site e interagir com usuários que estejam passando pela mesma situação. Caso julgue necessário, consulte a área de contato de psicólogos do site (considerando-se que no site não contém dados comprovados oficialmente, cujas informações contidas no software são rasas"
+    }
+    else if(resultado >= i){
+        resultado.textContent ="O seu resultado obtido é de"+i+"/10 pontos, recomenda-se consultar os conteúdos do site, interagir com usuários que estejam passando pela mesma situação e consultar a área de contato de psicólogos do site (considerando-se que no site não contém dados comprovados oficialmente, cujas informações contidas no software são rasas"
+    }
+    else if(resultado == i){
+        resultado.textContent ="O seu resultado obtido é de"+i+"/10 pontos, recomenda-se consultar a área de contato de psicólogos do site, para que assim possa ser agendado uma consulta! (considerando-se que no site não contém dados comprovados oficialmente, cujas informações contidas no software são rasas"
+    }*/
+    }
+</script>
+

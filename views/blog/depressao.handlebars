@@ -1,0 +1,41 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/conteudos.css">
+    <title>Depressão</title>
+</head>
+<body>
+     
+    <div class="corpo">
+        <h1>Depressão</h1>
+        <div class="divConteudos">
+            <img class="imgConteudo" src="/imagens/depressaoSintomas.png"/>
+        </div>
+    </div>
+    
+    <footer>
+        <p></p>
+    </footer>
+
+    
+    <script>
+        document.querySelector("nav").style.display="none";
+        icon=document.querySelector("#menu");
+        icon.onclick= function(){
+            nav=document.querySelector("nav");
+            if(nav.style.display=="none")
+                nav.style.display="block";
+
+            else 
+                nav.style.display="none";
+                
+            }
+
+        x = document.querySelector("#x");
+        x.onclick=function(){
+            nav=document.querySelector("nav");
+            nav.style.display="none";
+        }
+    </script>
+</body>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+  
+  <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+<!-- !!!!{{{body}}}!!!!!! -->
+ 
+    
+    
+    
+        
+        <div class="corpo">
+            
+            <div class="icones">
+            <div id="forumEmeditacao">
+                {{#if session.userid}} 
+                    <a href="/post/forum" style="text-decoration:none">Fórum</a>
+                {{else}}
+                    <a href="/login" style="text-decoration:none">Fórum</a>
+                {{/if}}
+                <img class="img" src="imagens/forum.png"/>
+                <a href="/blog/meditacao" style="text-decoration:none"> Meditação</a>
+                <img class="img" src="imagens/meditacao.png"/>
+            </div>
+
+            
+                <div id="estresseEdepressao">
+                    <!--<h1>ChatBot</h1>
+                    <img src="img/chatbotHome.png"/>-->
+                    <a href="/blog/estresse" style="text-decoration:none"> Estresse</a>
+
+                    <img class="img" src="imagens/estresse.png"/>
+                    <a href="/blog/depressao" style="text-decoration:none"> Depressao</a>
+                    <img class="img" src="imagens/depressao.png"/>
+                </div>
+
+                <div id="autoavaliacaoEansiedade">
+                    {{#if session.userid}} 
+                        <a href="/autoavaliacao" style="text-decoration:none">Autoavaliação</a>
+                    {{else}}
+                        <a  href="/login" style="text-decoration:none">Autoavaliação</a>            
+                    {{/if}}
+                    <img class="img" src="imagens/autoavaliacao.png"/>
+                    <a href="/blog/ansiedade" style="text-decoration:none"> Ansiedade</a>
+                    <img class="img" src="imagens/ansiedade.png"/>
+                </div>
+            </div>
+        </div>
+
+    <div class="container">
+   
+    </div>
+
+</body>
+</html>

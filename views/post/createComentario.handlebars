@@ -1,0 +1,12 @@
+<link rel="stylesheet" href="/css/create.css">
+<div class="post-form-container">
+    <a href="/post/forum">Voltar</a>
+    <h1>Criando Comentario: </h1>
+    <form action="/post/addComentario" method="POST">
+        <div class="form-control">
+            <input type="hidden" name="id" value="{{post.id}}">
+            <input id="input" type="text" name="conteudo" placeholder="O que você achou?">
+        </div>
+        <input id="publicarBtn" type="submit" value="Comentar">
+    </form>
+</div> 

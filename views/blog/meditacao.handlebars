@@ -1,0 +1,60 @@
+
+<head>
+  <title>Meditação</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/css/meditacao.css">
+</head>
+
+<!--<header class="cabecalho">
+    <div id="menu">
+        <img src="img/menu.png"/>
+    </div>
+    <div id="logo">
+        <img src="img/logoPsico.png"/>
+    </div>-->
+
+<body>
+   
+
+
+    <div class="corpo">
+        <h1>Meditação</h1>
+
+        <h3>Elevação espiritual</h3>
+
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/BG7IG7CDUhU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        
+      <p id="video"></p> 
+
+    <div id="explicacao">
+        <p id="conteudo">
+            A meditação possui muitos benefícios tanto mentais quanto físicos, atuando também no desenvolvimento pessoal e intelectual. É uma prática que tem o objetivo de trazer relaxamento ao corpo, promovendo o esvaziamento mental, o autoconhecimento e inibindo sensações de bem-estar e prazer. A meditação elimina o estresse, traz qualidade de vida, melhora a concentração, estimula a criatividade, e ainda auxilia em quadros de insônia, hipertensão, dores de cabeça, entre outros. 
+        </p>
+    </div>
+  
+    <div id="fim">
+
+    </div>
+</div>
+</div>
+    <script>
+        document.querySelector("nav").style.display="none";
+        icon=document.querySelector("#menu");
+        icon.onclick= function(){
+            nav=document.querySelector("nav");
+            if(nav.style.display=="none")
+                nav.style.display="block";
+
+            else 
+                nav.style.display="none";
+                
+            }
+
+        x = document.querySelector("#x");
+        x.onclick=function(){
+            nav=document.querySelector("nav");
+            nav.style.display="none";
+        }
+    </script>
+</body>

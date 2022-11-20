@@ -1,0 +1,70 @@
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/forum.css">
+    <title>Forum</title>
+</head>
+    
+ 
+ <div id="body">
+     {{{body}}}
+ </div>
+    
+    
+    
+    <div class="corpo">
+        {{#if admin}}
+            <h1> ADMIN</h1>
+           
+        {{/if}}
+
+        <div class="tittle-container">
+            <h3>Suas publicações: </h3>
+            <a href="/post/add" id="publicar">Publicar</a>
+            <a href="/post/showPost" id="publicar">Entrar no Fórum</a>
+        </div>
+    
+        <ul>
+            {{#each posts}}
+                <li>
+                    <span class="label">{{this.conteudo}} </span>
+                    <span class="actions">
+                        <a href="/post/edit/{{this.id}}" class="btn">Editar</a>
+                        <form action="/post/remove" method="POST">
+                            <input type="hidden" name="id" value="{{this.id}}">
+                            <input type="submit" id="btnExcluir" class="btn" value="Excluir">
+                        </form>
+                    </span>
+                </li>
+            {{/each}}
+        </ul>
+        
+    </div> 
+    
+    <div id="fim">
+
+    </div>
+    
+    <script>
+        document.querySelector("nav").style.display="none";
+        icon=document.querySelector("#menu");
+        icon.onclick= function(){
+            nav=document.querySelector("nav");
+            if(nav.style.display=="none")
+                nav.style.display="block";
+
+            else 
+                nav.style.display="none";
+                
+            }
+
+        x = document.querySelector("#x");
+        x.onclick=function(){
+            nav=document.querySelector("nav");
+            nav.style.display="none";
+        }
+    </script>
+
+
+ </div>

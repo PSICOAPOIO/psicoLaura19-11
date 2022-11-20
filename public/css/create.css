@@ -1,0 +1,37 @@
+.post-form-container #input{
+    width: 70vw;
+    height: 10vh;
+    background-color: #D9D9D9;
+    border:0;
+    border-radius:1vw ;
+}
+.post-form-container #input::placeholder{
+    color:#2E377F;
+    text-align: left;
+    font-size: 20px;
+}
+.post-form-container #publicarBtn{
+    color:#D9D9D9;
+    background-color:#2E377F;
+    border: 0;
+    border-radius: 5vw;
+    width:8vw;
+    height: 5vh;
+    cursor: pointer;
+    margin-top: 2vh;
+    margin-left: 75vw;
+    margin-bottom: 2vh;
+}
+
+.post-form-container #editarBtn{
+    color:#D9D9D9;
+    background-color:#2E377F;
+    border: 0;
+    border-radius: 5vw;
+    width:10vw;
+    height: 5vh;
+    cursor: pointer;
+    margin-top: 2vh;
+    margin-left: 75vw;
+    margin-bottom: 2vh;
+}

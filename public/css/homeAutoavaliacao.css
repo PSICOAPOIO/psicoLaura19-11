@@ -1,0 +1,75 @@
+h1{
+    text-align: center;
+}
+#explicacao{
+    margin-top: 5vh;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    text-align: justify;
+}
+.btnOpc{
+    margin: 20vw;
+    margin-top: 3vh;
+    
+}
+#ansiedade{
+    width: 110px;
+    background:  #f9f19b;
+    font-weight: bold;
+    color:#2e377f;
+    border: 0 none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px 5px;
+    margin: 30px 30px;
+}
+#depressao{
+    width: 110px;
+    background:  #a4f9c3;
+    font-weight: bold;
+    color:#2e377f;
+    border: 0 none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px 5px;
+    margin: 30px 30px;
+}
+#estresse{
+    width: 110px;
+    background: #fbc4c3;
+    font-weight: bold;
+    color:#2e377f;
+    border: 0 none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px 5px;
+    margin: 30px 30px;
+}
+#pergunta{
+    margin-top: 5vh;
+    margin-left: 20vw;
+    margin-bottom: 0;
+}
+
+@media only screen and (max-width: 650px){
+h1{
+    text-align: center;
+}
+#explicacao{
+    margin: 2vw;
+    text-align: justify;
+}
+.btnOpc{
+    margin: 20vw;
+    margin-top: 10vh;
+}
+#ansiedade{
+
+}
+#depressao{
+
+}
+#estresse{
+
+}
+}

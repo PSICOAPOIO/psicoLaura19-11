@@ -1,0 +1,47 @@
+<link rel="stylesheet" href="./css/login.css">
+<div class="container">
+    <div id="secondContent" class="content secondContent">
+            <div id="cadastro">
+                <div  class="bemVindo">
+                    <h1>BEM-VINDO(A) ao PsicoApoio!</h1>
+                    <p>Aqui você encontrará dicas e informações</p>
+                    <p>para o combate a problemas e transtornos </p> 
+                    <p>psicológicos.</p>
+                </div><!--Texto-->
+
+    <div class="cont">
+        <!--Mensagens-->
+        {{#if messages.message}}
+        <div class="message">
+             {{messages.message}}
+        </div>
+        {{/if}}
+       <!--Mens {{{body}}} agens-->
+    </div>
+                
+                <div class="defineLoginOuCadastro">
+                    <div id="opcLogin">
+                        <a href="/login" class="inativo" id="loginFormLink">LOGIN</a>
+                    </div>
+                    <div class="opcCadastro">
+                        <a href="#" class="ativo" id="cadastroFormLink">CADASTRO</a>
+                    </div>
+                </div>
+                <form action="/cadastro" method="POST" class="form" id="cadastroForm">
+                    <input type="text" name="name" placeholder="Nome de usuário" required="required"/>
+                    <input type="email" name="email" placeholder="E-mail" required="required"/>
+                    <input type="password" name="senha" placeholder="Senha" required="required"/>
+                    <input type="password" name="confirmaSenha" placeholder="Confirme a sua senha" required="required"/>
+
+
+                    <div class="divBtn">
+                        <input class="btn" id="btn" type="submit" name="cadastro" value="CADASTRE-SE"/>
+                    </div>
+                    
+                </form>
+            </div><!--cadastro-->
+            </div>
+        <div>
+            <img src="./imagens/logo.png" id="logo"/>
+        </div><!--logo-->
+</div>

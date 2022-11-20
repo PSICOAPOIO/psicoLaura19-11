@@ -1,0 +1,38 @@
+h1{
+    text-align: center;
+}
+form {
+    /* Apenas para centralizar o form na página */
+    margin: 0 auto;
+    width: 500px;
+    /* Para ver as bordas do formulário */
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+}
+form div + div {
+    margin-top: 3em;
+}
+p input {
+    /*Para ter certeza que todas as labels tem o mesmo tamanho e estão propriamente alinhadas */
+    display: inline-block;
+    width: 30px;
+    text-align: left;
+}
+
+#result{
+    width: 7vw;
+    height: 5vh;
+    margin-top: 5vh;
+    margin-left: 13vw;
+    background:#f9f19b;
+    font-weight: bold;
+    color:#2e377f;
+    border: 0 none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#resultado{
+    margin: 5vw;
+    text-align: center;
+}

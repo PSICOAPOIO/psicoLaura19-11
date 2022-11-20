@@ -1,0 +1,12 @@
+<link rel="stylesheet" href="/css/create.css">
+<div class="post-form-container">
+    <a href="/post/forum">Voltar</a>
+    <h1>Editando publicação:</h1>
+    <form action="/post/edit" method="POST">
+    <input type="hidden" name="id" value="{{post.id}}">
+    <div class="form-control">
+        <input id="input" type="text" name="conteudo" placeholder="No que você está pensando?" value="{{post.conteudo}}">
+    </div>
+    <input id="editarBtn" type="submit" value="Editar Pensamento">
+    </form>
+</div>
